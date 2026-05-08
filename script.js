@@ -4,7 +4,7 @@
 const MEMES = [
   /* ── POLITICAL ── */
   {
-    id: 1, name: "Hide the Pain Harold", category: "Political", year: 2011, emoji: "😬",
+    id: 1, name: "Hide the Pain Harold", category: "Political", year: 2011, emoji: "😬", image: "images/hide the pain harold.avif",
     spread: 4,
     origin: "A stock photo model named András Arató became famous for his uncomfortably forced smile, which internet users turned into a symbol of suppressed suffering.",
     timeline: [
@@ -18,7 +18,7 @@ const MEMES = [
     examples: ["Tax season Harold", "Monday morning Harold", "Election results Harold", "End of vacation Harold"]
   },
   {
-    id: 2, name: "Distracted Boyfriend", category: "Political", year: 2017, emoji: "👀",
+    id: 2, name: "Distracted Boyfriend", category: "Political", year: 2017, emoji: "👀", image: "images/distracted bf.jpeg",
     spread: 5,
     origin: "A Spanish stock photo by Antonio Guillem showing a man ogling a passing woman while his girlfriend looks on in disbelief became the internet's go-to template for depicting betrayal or distraction.",
     timeline: [
@@ -32,7 +32,7 @@ const MEMES = [
     examples: ["Government ignoring citizens", "Voter switching parties", "Tech companies vs privacy", "Budget priorities"]
   },
   {
-    id: 3, name: "Change My Mind", category: "Political", year: 2018, emoji: "🧐",
+    id: 3, name: "Change My Mind", category: "Political", year: 2018, emoji: "🧐", image: "images/change-my-mind.jpg",
     spread: 4,
     origin: "Comedian Steven Crowder sat at a campus table with a bold sign reading 'Male Privilege is a Myth. Change My Mind.' The image was repurposed as a debate-challenge template.",
     timeline: [
@@ -45,7 +45,7 @@ const MEMES = [
     examples: ["Pineapple belongs on pizza", "Tabs > Spaces", "Cereal before milk", "Hot dogs are sandwiches"]
   },
   {
-    id: 4, name: "Two Buttons", category: "Political", year: 2016, emoji: "🔴",
+    id: 4, name: "Two Buttons", category: "Political", year: 2016, emoji: "🔴", image: "images/two buttons meme.jpg",
     spread: 3,
     origin: "A webcomic strip by Jake Clark showing a sweaty man struggling to choose between two buttons was widely adapted to illustrate impossible choices or contradictory beliefs.",
     timeline: [
@@ -58,7 +58,7 @@ const MEMES = [
     examples: ["Tax cuts but deficit", "Freedom but safety", "Speed but accuracy", "Sleep vs productivity"]
   },
   {
-    id: 5, name: "Grim Reaper Knocking", category: "Political", year: 2020, emoji: "💀",
+    id: 5, name: "Grim Reaper Knocking", category: "Political", year: 2020, emoji: "💀", image: "images/grim reaper knocking.png",
     spread: 4,
     origin: "An editorial cartoon depicting the Grim Reaper knocking on doors became a powerful visual shorthand for impending doom, widely used during the COVID-19 pandemic.",
     timeline: [
@@ -72,7 +72,7 @@ const MEMES = [
 
   /* ── WHOLESOME ── */
   {
-    id: 6, name: "This is Fine Dog", category: "Wholesome", year: 2013, emoji: "🔥",
+    id: 6, name: "This is Fine Dog", category: "Wholesome", year: 2013, emoji: "🔥", image: "images/this is fine dog.jpg",
     spread: 5,
     origin: "From KC Green's Gunshow webcomic, a dog sits calmly in a burning room sipping coffee. Originally satirical, it evolved into a wholesome expression of resilient optimism.",
     timeline: [
@@ -86,7 +86,7 @@ const MEMES = [
     examples: ["Finals week", "Post-holiday finances", "2020 in general", "Monday energy", "Climate progress"]
   },
   {
-    id: 7, name: "Surprised Pikachu", category: "Wholesome", year: 2018, emoji: "⚡",
+    id: 7, name: "Surprised Pikachu", category: "Wholesome", year: 2018, emoji: "⚡", image: "images/surprised pikachu.jpeg",
     spread: 5,
     origin: "A screenshot of Pikachu from the original Pokémon anime displaying an exaggerated open-mouthed shocked expression became the definitive reaction image for predictable-yet-surprising outcomes.",
     timeline: [
@@ -99,7 +99,7 @@ const MEMES = [
     examples: ["Eating junk food, gaining weight", "Not studying, failing exam", "Sleeping late, tired morning"]
   },
   {
-    id: 8, name: "Wholesome Seal", category: "Wholesome", year: 2016, emoji: "🦭",
+    id: 8, name: "Wholesome Seal", category: "Wholesome", year: 2016, emoji: "🦭", image: "images/wholesome seal.jpeg",
     spread: 3,
     origin: "A photo of an adorable baby seal with soulful eyes became a template for expressing sincere affection and positivity, offering a counterpoint to ironic internet culture.",
     timeline: [
@@ -111,7 +111,7 @@ const MEMES = [
     examples: ["You got this!", "Proud of you", "You matter!", "Keep going"]
   },
   {
-    id: 9, name: "Two Bros Chilling", category: "Wholesome", year: 2017, emoji: "🛁",
+    id: 9, name: "Two Bros Chilling", category: "Wholesome", year: 2017, emoji: "🛁", image: null,
     spread: 2,
     origin: "A lyric from the SpongeBob episode 'Rock-a-Bye Bivalve' became a meme celebrating platonic male friendship and dismantling toxic masculinity through absurdist humor.",
     timeline: [
@@ -123,7 +123,7 @@ const MEMES = [
     examples: ["Guy friends road trip", "Study buddies", "Gym partners", "Gaming all night"]
   },
   {
-    id: 10, name: "A Dog Called Cheems", category: "Wholesome", year: 2017, emoji: "🐕",
+    id: 10, name: "A Dog Called Cheems", category: "Wholesome", year: 2017, emoji: "🐕", image: "images/cheems.jpg",
     spread: 4,
     origin: "A Shiba Inu dog named Balltze (nicknamed Cheems) photographed with a McDonald's burger became the sweet, speech-impediment-having counterpart to the aggressive 'Swole Doge' format.",
     timeline: [
@@ -138,7 +138,7 @@ const MEMES = [
 
   /* ── GAMING ── */
   {
-    id: 11, name: "GG EZ", category: "Gaming", year: 2010, emoji: "🎮",
+    id: 11, name: "GG EZ", category: "Gaming", year: 2010, emoji: "🎮", image: "images/gg ez.jpg",
     spread: 3,
     origin: "A competitive gaming trash-talk phrase meaning 'good game, easy victory' that evolved from sincere sportsmanship into ironic self-deprecation and gentle humor.",
     timeline: [
@@ -150,7 +150,7 @@ const MEMES = [
     examples: ["After barely winning", "Failed DIY project", "Surviving Monday", "End of semester"]
   },
   {
-    id: 12, name: "Press F to Pay Respects", category: "Gaming", year: 2014, emoji: "🎖️",
+    id: 12, name: "Press F to Pay Respects", category: "Gaming", year: 2014, emoji: "🎖️", image: "images/PressFtoPayRespects.jpg",
     spread: 5,
     origin: "Call of Duty: Advanced Warfare included a cutscene requiring players to press 'F' on keyboard to pay respects at a funeral — an earnest moment that became hilariously absurd to players.",
     timeline: [
@@ -163,7 +163,7 @@ const MEMES = [
     examples: ["F in the chat", "Fallen pizza slice", "Dropped phone screen", "Bad patch notes", "Season finale deaths"]
   },
   {
-    id: 13, name: "It's Over 9000!", category: "Gaming", year: 2006, emoji: "🔥",
+    id: 13, name: "It's Over 9000!", category: "Gaming", year: 2006, emoji: "🔥", image: "images/its over 9000 dbz.webp",
     spread: 4,
     origin: "A line from Dragon Ball Z — 'It's over 9000!' screamed by Vegeta — was transformed by a YouTube video into a viral meme about exceeding expectations or overwhelming quantities.",
     timeline: [
@@ -176,7 +176,7 @@ const MEMES = [
     examples: ["Server load", "Final exam scores", "Sale discount", "Sub counts", "My anxiety levels"]
   },
   {
-    id: 14, name: "Dark Souls: You Died", category: "Gaming", year: 2011, emoji: "⚔️",
+    id: 14, name: "Dark Souls: You Died", category: "Gaming", year: 2011, emoji: "⚔️", image: "images/dark souls you died.jpg",
     spread: 4,
     origin: "The stark 'YOU DIED' screen in FromSoftware's Dark Souls became a meme about difficulty, perseverance, and the satisfaction of overcoming seemingly impossible challenges.",
     timeline: [
@@ -189,7 +189,7 @@ const MEMES = [
     examples: ["Cooking a new recipe", "Learning to drive", "Tax filing", "First gym day", "Public speaking"]
   },
   {
-    id: 15, name: "We Do a Little Trolling", category: "Gaming", year: 2021, emoji: "😈",
+    id: 15, name: "We Do a Little Trolling", category: "Gaming", year: 2021, emoji: "😈", image: "images/we-do-a-little-trolling.gif",
     spread: 3,
     origin: "A quote often attributed (possibly fictitiously) to the Minecraft content creator TommyInnit during a stream. The phrase captures the playful, chaotic spirit of gaming culture.",
     timeline: [
@@ -203,7 +203,7 @@ const MEMES = [
 
   /* ── REACTION ── */
   {
-    id: 16, name: "Side-Eye Chloe", category: "Reaction", year: 2013, emoji: "😒",
+    id: 16, name: "Side-Eye Chloe", category: "Reaction", year: 2013, emoji: "😒", image: "images/Side_Eyeing_Chloe.jpg",
     spread: 4,
     origin: "A video of young Chloe reacting to a Disney World surprise with a deadpan side-eye captured a perfectly relatable expression of unimpressed skepticism.",
     timeline: [
@@ -216,7 +216,7 @@ const MEMES = [
     examples: ["Friend's 'easy' recipe", "Surprise party you knew about", "5-minute meeting at 4:55pm", "Decaf coffee"]
   },
   {
-    id: 17, name: "Woman Yelling at Cat", category: "Reaction", year: 2019, emoji: "😤",
+    id: 17, name: "Woman Yelling at Cat", category: "Reaction", year: 2019, emoji: "😤", image: "images/WomanYellingAtACat_meme.jpg",
     spread: 5,
     origin: "A combination of two unrelated images — a woman from The Real Housewives pointing angrily, and a confused white cat (Smudge) sitting at a dinner table — became the defining reaction format for arguments.",
     timeline: [
@@ -229,7 +229,7 @@ const MEMES = [
     examples: ["Client vs designer", "Brain vs heart", "Me at 10pm vs Me at 2am", "Expectation vs reality"]
   },
   {
-    id: 18, name: "Drake Hotline Bling", category: "Reaction", year: 2016, emoji: "🎤",
+    id: 18, name: "Drake Hotline Bling", category: "Reaction", year: 2016, emoji: "🎤", image: "images/hotline bling.jpg",
     spread: 5,
     origin: "A screenshot from Drake's 'Hotline Bling' music video showing two poses — disapproval and approval — became the internet's most iconic binary preference format.",
     timeline: [
@@ -293,7 +293,7 @@ function renderGrid() {
 
   grid.innerHTML = filtered.map((m, i) => `
     <article class="meme-card" data-id="${m.id}" style="animation-delay:${i * 0.05}s">
-      <div class="card-img">${m.emoji}</div>
+      <div class="card-img">${m.image ? `<img src="${m.image}" alt="${m.name}" onerror="this.parentElement.textContent='${m.emoji}'">` : m.emoji}</div>
       <div class="card-body">
         <div class="card-meta">
           <span class="cat-badge cat-${m.category}">${m.category}</span>
@@ -322,8 +322,13 @@ function openModal(id) {
   if (!m) return;
 
   const modalHero = document.getElementById('modalHero');
-  modalHero.textContent = m.emoji;
-  modalHero.style.fontSize = '7rem';
+  if (m.image) {
+    modalHero.innerHTML = `<img src="${m.image}" alt="${m.name}" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" onerror="this.parentElement.textContent='${m.emoji}';this.parentElement.style.fontSize='7rem';">`;
+    modalHero.style.fontSize = '';
+  } else {
+    modalHero.textContent = m.emoji;
+    modalHero.style.fontSize = '7rem';
+  }
 
   document.getElementById('modalTitle').textContent = m.name;
 
