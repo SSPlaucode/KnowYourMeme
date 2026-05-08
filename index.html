@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KnowYourMeme — Interactive Meme Encyclopedia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header>
+    <a class="logo" href="#"><span>K</span>now<span>Y</span>our<span>M</span>eme</a>
+    <nav>
+      <a href="#memes">Memes</a>
+      <a href="#" onclick="filterAll()">All Categories</a>
+    </nav>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="top">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">// Interactive Meme Encyclopedia</p>
+      <h1>KNOW<br /><span class="accent">YOUR</span><br /><span class="accent2">MEME</span></h1>
+      <p class="hero-sub">
+        Explore the origins, evolution, and cultural significance<br />
+        of internet's most iconic memes — all in one place.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" id="heroTotal">18</span>
+          <span class="stat-label">Memes Documented</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Categories</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Lore Unlocked</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Search & Filter Controls ── -->
+  <div class="controls" id="memes">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search memes, origins, examples…"
+        autocomplete="off"
+      />
+    </div>
+    <div class="filter-row" id="filterRow">
+      <button class="filter-btn active" data-cat="All">All</button>
+      <button class="filter-btn" data-cat="Political">Political</button>
+      <button class="filter-btn" data-cat="Wholesome">Wholesome</button>
+      <button class="filter-btn" data-cat="Gaming">Gaming</button>
+      <button class="filter-btn" data-cat="Reaction">Reaction</button>
+    </div>
+  </div>
+
+  <!-- ── Results Bar ── -->
+  <div class="results-bar">
+    Showing <span id="resultCount">18</span> memes
+  </div>
+
+  <!-- ── Meme Grid ── -->
+  <main class="meme-grid" id="memeGrid"></main>
+
+  <!-- ── Modal ── -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true">
+    <div class="modal" id="modal">
+      <div class="modal-hero" id="modalHero"></div>
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-body">
+        <div class="modal-top">
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <span class="cat-badge" id="modalBadge"></span>
+        </div>
+        <div class="modal-section">
+          <h3>Origin</h3>
+          <p id="modalOrigin"></p>
+        </div>
+        <div class="modal-section">
+          <h3>Evolution Timeline</h3>
+          <div class="timeline" id="modalTimeline"></div>
+        </div>
+        <div class="modal-section">
+          <h3>Cultural Significance</h3>
+          <p id="modalSignificance"></p>
+        </div>
+        <div class="modal-section">
+          <h3>Popular Examples</h3>
+          <div class="examples-list" id="modalExamples"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p>
+      Built for <span>CSE106 — Fundamentals of Web Design</span>
+      &nbsp;·&nbsp;
+      Shubham Singh Panwar, Utkarsh Patra, Tanishq Dua
+      &nbsp;·&nbsp; 2026
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
